@@ -7,6 +7,7 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		C27FAF051B63B27000B6F576 /* mapapi.bundle in Resources */ = {isa = PBXBuildFile; fileRef = C27FAF041B63B27000B6F576 /* mapapi.bundle */; };
 		C2C52A041B637BBE00516AEB /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = C2C52A031B637BBE00516AEB /* main.m */; };
 		C2C52A071B637BBE00516AEB /* AppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = C2C52A061B637BBE00516AEB /* AppDelegate.m */; };
 		C2C52A0A1B637BBE00516AEB /* ViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = C2C52A091B637BBE00516AEB /* ViewController.m */; };
@@ -35,6 +36,7 @@
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
+		C27FAF041B63B27000B6F576 /* mapapi.bundle */ = {isa = PBXFileReference; lastKnownFileType = "wrapper.plug-in"; path = mapapi.bundle; sourceTree = "<group>"; };
 		C2C529FE1B637BBE00516AEB /* BaiDuMap.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = BaiDuMap.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		C2C52A021B637BBE00516AEB /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		C2C52A031B637BBE00516AEB /* main.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = main.m; sourceTree = "<group>"; };
@@ -104,6 +106,7 @@
 		C2C52A001B637BBE00516AEB /* BaiDuMap */ = {
 			isa = PBXGroup;
 			children = (
+				C27FAF041B63B27000B6F576 /* mapapi.bundle */,
 				C2C52A051B637BBE00516AEB /* AppDelegate.h */,
 				C2C52A061B637BBE00516AEB /* AppDelegate.m */,
 				C2C52A081B637BBE00516AEB /* ViewController.h */,
@@ -239,6 +242,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				C2C52A0D1B637BBE00516AEB /* Main.storyboard in Resources */,
+				C27FAF051B63B27000B6F576 /* mapapi.bundle in Resources */,
 				C2C52A121B637BBE00516AEB /* LaunchScreen.xib in Resources */,
 				C2C52A0F1B637BBE00516AEB /* Images.xcassets in Resources */,
 			);
@@ -392,6 +396,7 @@
 				INFOPLIST_FILE = BaiDuMap/Info.plist;
 				IPHONEOS_DEPLOYMENT_TARGET = 7.1;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
+				OTHER_LDFLAGS = "-ObjC";
 				PRODUCT_NAME = "$(TARGET_NAME)";
 			};
 			name = Debug;
@@ -408,6 +413,7 @@
 				INFOPLIST_FILE = BaiDuMap/Info.plist;
 				IPHONEOS_DEPLOYMENT_TARGET = 7.1;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
+				OTHER_LDFLAGS = "-ObjC";
 				PRODUCT_NAME = "$(TARGET_NAME)";
 			};
 			name = Release;
