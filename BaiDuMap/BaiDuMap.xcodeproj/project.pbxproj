@@ -14,6 +14,8 @@
 		C2C52A0F1B637BBE00516AEB /* Images.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = C2C52A0E1B637BBE00516AEB /* Images.xcassets */; };
 		C2C52A121B637BBE00516AEB /* LaunchScreen.xib in Resources */ = {isa = PBXBuildFile; fileRef = C2C52A101B637BBE00516AEB /* LaunchScreen.xib */; };
 		C2C52A1E1B637BBE00516AEB /* BaiDuMapTests.m in Sources */ = {isa = PBXBuildFile; fileRef = C2C52A1D1B637BBE00516AEB /* BaiDuMapTests.m */; };
+		C2C52A331B6392CA00516AEB /* BaiduMapAPI.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = C2C52A321B6392CA00516AEB /* BaiduMapAPI.framework */; };
+		C2C52A341B6392E500516AEB /* BaiduMapAPI.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = C2C52A321B6392CA00516AEB /* BaiduMapAPI.framework */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -40,6 +42,7 @@
 		C2C52A171B637BBE00516AEB /* BaiDuMapTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = BaiDuMapTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		C2C52A1C1B637BBE00516AEB /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		C2C52A1D1B637BBE00516AEB /* BaiDuMapTests.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = BaiDuMapTests.m; sourceTree = "<group>"; };
+		C2C52A321B6392CA00516AEB /* BaiduMapAPI.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; path = BaiduMapAPI.framework; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -47,6 +50,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				C2C52A341B6392E500516AEB /* BaiduMapAPI.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -54,6 +58,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				C2C52A331B6392CA00516AEB /* BaiduMapAPI.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -105,6 +110,7 @@
 		C2C52A1A1B637BBE00516AEB /* BaiDuMapTests */ = {
 			isa = PBXGroup;
 			children = (
+				C2C52A311B6392CA00516AEB /* Frameworks */,
 				C2C52A1D1B637BBE00516AEB /* BaiDuMapTests.m */,
 				C2C52A1B1B637BBE00516AEB /* Supporting Files */,
 			);
@@ -117,6 +123,14 @@
 				C2C52A1C1B637BBE00516AEB /* Info.plist */,
 			);
 			name = "Supporting Files";
+			sourceTree = "<group>";
+		};
+		C2C52A311B6392CA00516AEB /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				C2C52A321B6392CA00516AEB /* BaiduMapAPI.framework */,
+			);
+			path = Frameworks;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -345,6 +359,11 @@
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				FRAMEWORK_SEARCH_PATHS = (
+					"$(inherited)",
+					"/Users/lanou3g/Desktop/BaiduMap_IOSSDK_v2/BaiduMap_IOSSDK_v2.8.1_Lib/Release-iphonesimulator",
+					"$(PROJECT_DIR)/BaiDuMapTests/Frameworks",
+				);
 				INFOPLIST_FILE = BaiDuMap/Info.plist;
 				IPHONEOS_DEPLOYMENT_TARGET = 7.1;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
@@ -356,6 +375,11 @@
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				FRAMEWORK_SEARCH_PATHS = (
+					"$(inherited)",
+					"/Users/lanou3g/Desktop/BaiduMap_IOSSDK_v2/BaiduMap_IOSSDK_v2.8.1_Lib/Release-iphonesimulator",
+					"$(PROJECT_DIR)/BaiDuMapTests/Frameworks",
+				);
 				INFOPLIST_FILE = BaiDuMap/Info.plist;
 				IPHONEOS_DEPLOYMENT_TARGET = 7.1;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
@@ -370,6 +394,7 @@
 				FRAMEWORK_SEARCH_PATHS = (
 					"$(SDKROOT)/Developer/Library/Frameworks",
 					"$(inherited)",
+					"$(PROJECT_DIR)/BaiDuMapTests/Frameworks",
 				);
 				GCC_PREPROCESSOR_DEFINITIONS = (
 					"DEBUG=1",
@@ -389,6 +414,7 @@
 				FRAMEWORK_SEARCH_PATHS = (
 					"$(SDKROOT)/Developer/Library/Frameworks",
 					"$(inherited)",
+					"$(PROJECT_DIR)/BaiDuMapTests/Frameworks",
 				);
 				INFOPLIST_FILE = BaiDuMapTests/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
@@ -416,6 +442,7 @@
 				C2C52A231B637BBE00516AEB /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 		C2C52A241B637BBE00516AEB /* Build configuration list for PBXNativeTarget "BaiDuMapTests" */ = {
 			isa = XCConfigurationList;
@@ -424,6 +451,7 @@
 				C2C52A261B637BBE00516AEB /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
 	};
