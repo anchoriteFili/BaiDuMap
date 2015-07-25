@@ -16,6 +16,12 @@
 		C2C52A1E1B637BBE00516AEB /* BaiDuMapTests.m in Sources */ = {isa = PBXBuildFile; fileRef = C2C52A1D1B637BBE00516AEB /* BaiDuMapTests.m */; };
 		C2C52A331B6392CA00516AEB /* BaiduMapAPI.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = C2C52A321B6392CA00516AEB /* BaiduMapAPI.framework */; };
 		C2C52A341B6392E500516AEB /* BaiduMapAPI.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = C2C52A321B6392CA00516AEB /* BaiduMapAPI.framework */; };
+		C2C52A361B6394A700516AEB /* CoreLocation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = C2C52A351B6394A700516AEB /* CoreLocation.framework */; };
+		C2C52A381B6394C400516AEB /* QuartzCore.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = C2C52A371B6394C400516AEB /* QuartzCore.framework */; };
+		C2C52A3A1B6394E000516AEB /* OpenGLES.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = C2C52A391B6394E000516AEB /* OpenGLES.framework */; };
+		C2C52A3C1B6394EF00516AEB /* SystemConfiguration.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = C2C52A3B1B6394EF00516AEB /* SystemConfiguration.framework */; };
+		C2C52A3E1B6394FF00516AEB /* CoreGraphics.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = C2C52A3D1B6394FF00516AEB /* CoreGraphics.framework */; };
+		C2C52A401B63950F00516AEB /* Security.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = C2C52A3F1B63950F00516AEB /* Security.framework */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -43,6 +49,12 @@
 		C2C52A1C1B637BBE00516AEB /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		C2C52A1D1B637BBE00516AEB /* BaiDuMapTests.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = BaiDuMapTests.m; sourceTree = "<group>"; };
 		C2C52A321B6392CA00516AEB /* BaiduMapAPI.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; path = BaiduMapAPI.framework; sourceTree = "<group>"; };
+		C2C52A351B6394A700516AEB /* CoreLocation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = CoreLocation.framework; path = System/Library/Frameworks/CoreLocation.framework; sourceTree = SDKROOT; };
+		C2C52A371B6394C400516AEB /* QuartzCore.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = QuartzCore.framework; path = System/Library/Frameworks/QuartzCore.framework; sourceTree = SDKROOT; };
+		C2C52A391B6394E000516AEB /* OpenGLES.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = OpenGLES.framework; path = System/Library/Frameworks/OpenGLES.framework; sourceTree = SDKROOT; };
+		C2C52A3B1B6394EF00516AEB /* SystemConfiguration.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = SystemConfiguration.framework; path = System/Library/Frameworks/SystemConfiguration.framework; sourceTree = SDKROOT; };
+		C2C52A3D1B6394FF00516AEB /* CoreGraphics.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = CoreGraphics.framework; path = System/Library/Frameworks/CoreGraphics.framework; sourceTree = SDKROOT; };
+		C2C52A3F1B63950F00516AEB /* Security.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Security.framework; path = System/Library/Frameworks/Security.framework; sourceTree = SDKROOT; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -50,6 +62,12 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				C2C52A401B63950F00516AEB /* Security.framework in Frameworks */,
+				C2C52A3E1B6394FF00516AEB /* CoreGraphics.framework in Frameworks */,
+				C2C52A3C1B6394EF00516AEB /* SystemConfiguration.framework in Frameworks */,
+				C2C52A3A1B6394E000516AEB /* OpenGLES.framework in Frameworks */,
+				C2C52A381B6394C400516AEB /* QuartzCore.framework in Frameworks */,
+				C2C52A361B6394A700516AEB /* CoreLocation.framework in Frameworks */,
 				C2C52A341B6392E500516AEB /* BaiduMapAPI.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -93,6 +111,7 @@
 				C2C52A0B1B637BBE00516AEB /* Main.storyboard */,
 				C2C52A0E1B637BBE00516AEB /* Images.xcassets */,
 				C2C52A101B637BBE00516AEB /* LaunchScreen.xib */,
+				C2C52A311B6392CA00516AEB /* Frameworks */,
 				C2C52A011B637BBE00516AEB /* Supporting Files */,
 			);
 			path = BaiDuMap;
@@ -110,7 +129,6 @@
 		C2C52A1A1B637BBE00516AEB /* BaiDuMapTests */ = {
 			isa = PBXGroup;
 			children = (
-				C2C52A311B6392CA00516AEB /* Frameworks */,
 				C2C52A1D1B637BBE00516AEB /* BaiDuMapTests.m */,
 				C2C52A1B1B637BBE00516AEB /* Supporting Files */,
 			);
@@ -128,10 +146,17 @@
 		C2C52A311B6392CA00516AEB /* Frameworks */ = {
 			isa = PBXGroup;
 			children = (
+				C2C52A3F1B63950F00516AEB /* Security.framework */,
+				C2C52A3D1B6394FF00516AEB /* CoreGraphics.framework */,
+				C2C52A3B1B6394EF00516AEB /* SystemConfiguration.framework */,
+				C2C52A391B6394E000516AEB /* OpenGLES.framework */,
+				C2C52A371B6394C400516AEB /* QuartzCore.framework */,
+				C2C52A351B6394A700516AEB /* CoreLocation.framework */,
 				C2C52A321B6392CA00516AEB /* BaiduMapAPI.framework */,
 			);
-			path = Frameworks;
-			sourceTree = "<group>";
+			name = Frameworks;
+			path = BaiDuMapTests/Frameworks;
+			sourceTree = SOURCE_ROOT;
 		};
 /* End PBXGroup section */
 
